@@ -1,5 +1,5 @@
 
-C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>avrdude -c usbtiny -p t45 -U flash:w:usbtiny.hex
+C:\windows\system32>avrdude -c usbtiny -p t45 -U flash:w:usbtiny.hex
 
 avrdude: AVR device initialized and ready to accept instructions
 
@@ -36,7 +36,7 @@ avrdude: safemode: Fuses OK
 avrdude done.  Thank you.
 
 
-C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>avrdude -c usbtiny -p t45 -V -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xff:m
+C:\windows\system32>avrdude -c usbtiny -p t45 -V -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xff:m
 
 avrdude: AVR device initialized and ready to accept instructions
 
@@ -67,7 +67,7 @@ avrdude: safemode: Fuses OK
 avrdude done.  Thank you.
 
 
-C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>avrdude -c usbtiny -p t45
+C:\windows\system32>avrdude -c usbtiny -p t45
 
 avrdude: initialization failed, rc=-1
          Double check connections and try again, or use -F to override
@@ -75,6 +75,3 @@ avrdude: initialization failed, rc=-1
 
 
 avrdude done.  Thank you.
-
-
-C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>
