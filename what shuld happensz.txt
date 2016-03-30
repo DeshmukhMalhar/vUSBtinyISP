@@ -1,0 +1,80 @@
+
+C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>avrdude -c usbtiny -p t45 -U flash:w:usbtiny.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.02s
+
+avrdude: Device signature = 0x1e9206
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file "usbtiny.hex"
+avrdude: input file usbtiny.hex auto detected as Intel Hex
+avrdude: writing flash (2534 bytes):
+
+Writing | ################################################## | 100% 3.25s
+
+
+
+avrdude: 2534 bytes of flash written
+avrdude: verifying flash memory against usbtiny.hex:
+avrdude: load data flash data from input file usbtiny.hex:
+avrdude: input file usbtiny.hex auto detected as Intel Hex
+avrdude: input file usbtiny.hex contains 2534 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 2.33s
+
+
+
+avrdude: verifying ...
+avrdude: 2534 bytes of flash verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+
+
+C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>avrdude -c usbtiny -p t45 -V -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xff:m
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.02s
+
+avrdude: Device signature = 0x1e9206
+avrdude: reading input file "0xe1"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.02s
+
+avrdude: 1 bytes of lfuse written
+avrdude: reading input file "0x5d"
+avrdude: writing hfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.02s
+
+avrdude: 1 bytes of hfuse written
+avrdude: reading input file "0xff"
+avrdude: writing efuse (1 bytes):
+
+Writing | ################################################## | 100% 0.02s
+
+avrdude: 1 bytes of efuse written
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+
+
+C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>avrdude -c usbtiny -p t45
+
+avrdude: initialization failed, rc=-1
+         Double check connections and try again, or use -F to override
+         this check.
+
+
+avrdude done.  Thank you.
+
+
+C:\Users\BLAH\Desktop\USBTINYPCBAL\attiny usbtiny>
